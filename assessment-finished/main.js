@@ -21,14 +21,14 @@ function result() {
   const yItem = randomValueFromArray(insertY);
   const zItem = randomValueFromArray(insertZ);
 
-  newStory = newStory.replace(':insertx:',xItem);
+  newStory = newStory.replace(':insertx:',xItem);//選んだ文字列に置き換える
   newStory = newStory.replace(':insertx:',xItem);
   newStory = newStory.replace(':inserty:',yItem);
   newStory = newStory.replace(':insertz:',zItem);
 
   if (customName.value !== '') {
     const name = customName.value;
-    newStory = newStory.replace('Bob', name);
+    newStory = newStory.replace('Bob', name);//userが入力したもに置換
   }
 
   if (document.getElementById("uk").checked) {
