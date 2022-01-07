@@ -33,7 +33,7 @@ function result() {
 
   if (document.getElementById("日本").checked) {
     const money = `${Math.round((115.66) * 10)}円`;
-    const temperature =  `$摂氏{Math.round((94-32) * 5 / 9)}度`;
+    const temperature =  `摂氏${Math.round((94-32) * 5 / 9)}度`;
     newStory = newStory.replace('10ドル', money);
     newStory = newStory.replace('華氏90度', temperature);
   }
