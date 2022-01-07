@@ -7,7 +7,7 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-const storyText = 'その日は、とても暑かった。 :insertx:は森の中を歩いていた。水飲み場に着いたとき、:inserty:から美しい音色が聞こえてきた。 :insertx:は:inserty:へ水を飲まずに向かっていった。しかし、:insertz:。';
+const storyText = 'その日は、とても暑かった。 :insertx:は森の中を歩いていた。途中で友達に合った。水飲み場に着いたとき、:inserty:から美しい音色が聞こえてきた。 :insertx:は:inserty:へ水を飲まずに向かっていった。しかし、:insertz:。';
 const insertX = ['熊さん', '小人', 'おじさん'];//javascriptの配列
 const insertY = ['山の向こう', '家', '駅の方向'];
 const insertZ = ['それは夢だった', '途中でのどが渇いてしまい、倒れてしまった。', '水を飲み忘れたことに途中で気づき、水飲み場へ戻った。'];
@@ -28,7 +28,7 @@ function result() {
 
   if (customName.value !== '') {
     const name = customName.value;
-    newStory = newStory.replace('Bob', name);//userが入力したもに置換
+    newStory = newStory.replace('友達', name);//userが入力したもに置換
   }
 
   if (document.getElementById("uk").checked) {
