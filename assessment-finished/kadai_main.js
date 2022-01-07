@@ -7,7 +7,7 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-const storyText = 'その日は、とても暑かった。 :insertx:は森の中を歩いていた。途中で友達に合った。水飲み場に着いたとき、:inserty:から美しい音色が聞こえてきた。 :insertx:は:inserty:へ水を飲まずに向かっていった。しかし、:insertz:。';
+const storyText = 'その日は、とても暑かった。 :insertx:は所持金10ドルをもって森の中を歩いていた。華氏90度なのでとても暑かった。途中で友達に合った。水飲み場に着いたとき、:inserty:から美しい音色が聞こえてきた。 :insertx:は:inserty:へ水を飲まずに向かっていった。しかし、:insertz:。';
 const insertX = ['熊さん', '小人', 'おじさん'];//javascriptの配列
 const insertY = ['山の向こう', '家', '駅の方向'];
 const insertZ = ['それは夢だった', '途中でのどが渇いてしまい、倒れてしまった。', '水を飲み忘れたことに途中で気づき、水飲み場へ戻った。'];
@@ -31,11 +31,11 @@ function result() {
     newStory = newStory.replace('友達', name);//userが入力したもに置換
   }
 
-  if (document.getElementById("uk").checked) {
-    const weight = `${Math.round(300*0.0714286)} stone`;
-    const temperature =  `${Math.round((94-32) * 5 / 9)} centigrade`;
-    newStory = newStory.replace('94 fahrenheit', temperature);
-    newStory = newStory.replace('300 pounds', weight);
+  if (document.getElementById("日本").checked) {
+    const money = `${Math.round((115.66) * 10)}円`;
+    const temperature =  `$摂氏{Math.round((94-32) * 5 / 9)}度`;
+    newStory = newStory.replace('10ドル', money);
+    newStory = newStory.replace('華氏90度', temperature);
   }
 
   story.textContent = newStory;
