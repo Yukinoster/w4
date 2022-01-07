@@ -31,7 +31,7 @@ function result() {
     newStory = newStory.replace('友達', name);//userが入力したもに置換
   }
 
-  if (document.getElementById("日本").checked) {
+  if (document.getElementById("ja").checked) {
     const money = `${Math.round((115.66) * 10)}円`;
     const temperature =  `摂氏${Math.round((94-32) * 5 / 9)}度`;
     newStory = newStory.replace('10ドル', money);
